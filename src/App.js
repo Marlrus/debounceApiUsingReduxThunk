@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { connect } from "react-redux";
+import { fetchMovieByTitleAction } from "./redux/actions/movie.actions";
 
 const App = (props) => {
-  const { movieState } = props;
+  const { movieState, fetchMovieByTitle } = props;
+
+  useEffect(() => {
+    fetchMovieByTitle();
+  }, []);
 
   return (
     <div>
@@ -14,4 +20,8 @@ const mapStateToProps = (state) => ({
   movieState: state.movieData,
 });
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = (dispatch) => ({
+  fetchMovieByTitle: () => dispatch(fetchMovieByTitleAction()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
