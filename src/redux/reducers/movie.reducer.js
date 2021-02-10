@@ -1,7 +1,7 @@
 import { movieActionTypes } from "../actions/movie.actions";
 
 const INITIAL_STATE = {
-  loading: false,
+  fetching: false,
   movieData: [],
   error: null,
 };
@@ -11,18 +11,18 @@ const movieReducer = (state = INITIAL_STATE, { type, payload }) => {
     case movieActionTypes.MOVIE_FETCH_SUCCESS:
       return {
         ...state,
-        loading: false,
+        fetching: false,
         movieData: payload,
       };
     case movieActionTypes.MOVIE_FETCH_START:
       return {
         ...state,
-        loading: true,
+        fetching: true,
       };
     case movieActionTypes.MOVIE_FETCH_FAILURE:
       return {
         ...state,
-        loading: false,
+        fetching: false,
         error: payload.message,
       };
     default:

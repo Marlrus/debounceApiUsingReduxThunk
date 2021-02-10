@@ -1,0 +1,56 @@
+body {
+  background-color: #011627;
+  color: #d6deeb;
+}
+
+input {
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #d6deeb;
+  margin-left: 12px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 32px auto;
+  font-size: 24px;
+}
+
+.title {
+  margin-bottom: 6px;
+}
+
+.poster {
+  height: 466px;
+}
+
+.resultContainer {
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plot {
+  text-align: center;
+}
+
+.ratingsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rating {
+  margin: 12px;
+}
+
+.projectDescription {
+  text-align: center;
+}

@@ -1,4 +1,5 @@
 import Axios from "axios";
+import makeDebounce from "redux-debounce-thunk";
 
 export const movieActionTypes = {
   MOVIE_FETCH_SUCCESS: "MOVIE_FETCH_SUCCESS",
@@ -20,18 +21,17 @@ export const movieFetchFailureAction = (err) => ({
   payload: err,
 });
 
-export const fetchMovieByTitleAction = () => async (dispatch, getState) => {
-  const stateBefore = getState();
-  console.log({ stateBefore });
+const fetchMovieByTitle = (title) => async (dispatch) => {
   dispatch(movieFetchStartAction());
   try {
+    console.log(title);
     const res = await Axios.get(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=70a503f8"
+      `http://www.omdbapi.com/?i=tt3896198&apikey=70a503f8&t=${title}`
     );
     dispatch(movieFetchSuccessAction(res.data));
   } catch (err) {
     dispatch(movieFetchFailureAction(err));
   }
-  const stateAfter = getState();
-  console.log({ stateAfter });
 };
+
+export const fetchMovieByTitleAction = makeDebounce(fetchMovieByTitle, 1000);
