@@ -26,7 +26,7 @@ const fetchMovieByTitle = (title) => async (dispatch) => {
   try {
     console.log(title);
     const res = await Axios.get(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=70a503f8&t=${title}`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=70a503f8&t=${title}`
     );
     dispatch(movieFetchSuccessAction(res.data));
   } catch (err) {
