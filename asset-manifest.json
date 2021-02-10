@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/debounceApiUsingReduxThunk/static/css/main.5a445ed0.chunk.css",
+    "main.js": "/debounceApiUsingReduxThunk/static/js/main.cade9bd3.chunk.js",
+    "main.js.map": "/debounceApiUsingReduxThunk/static/js/main.cade9bd3.chunk.js.map",
+    "runtime-main.js": "/debounceApiUsingReduxThunk/static/js/runtime-main.bac9c9b3.js",
+    "runtime-main.js.map": "/debounceApiUsingReduxThunk/static/js/runtime-main.bac9c9b3.js.map",
+    "static/js/2.30f67002.chunk.js": "/debounceApiUsingReduxThunk/static/js/2.30f67002.chunk.js",
+    "static/js/2.30f67002.chunk.js.map": "/debounceApiUsingReduxThunk/static/js/2.30f67002.chunk.js.map",
+    "static/js/3.141f35a1.chunk.js": "/debounceApiUsingReduxThunk/static/js/3.141f35a1.chunk.js",
+    "static/js/3.141f35a1.chunk.js.map": "/debounceApiUsingReduxThunk/static/js/3.141f35a1.chunk.js.map",
+    "index.html": "/debounceApiUsingReduxThunk/index.html",
+    "static/css/main.5a445ed0.chunk.css.map": "/debounceApiUsingReduxThunk/static/css/main.5a445ed0.chunk.css.map",
+    "static/js/2.30f67002.chunk.js.LICENSE.txt": "/debounceApiUsingReduxThunk/static/js/2.30f67002.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bac9c9b3.js",
+    "static/js/2.30f67002.chunk.js",
+    "static/css/main.5a445ed0.chunk.css",
+    "static/js/main.cade9bd3.chunk.js"
+  ]
+}
